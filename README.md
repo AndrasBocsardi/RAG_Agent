@@ -8,7 +8,8 @@ It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves releva
 
 ---
 - The notebook (`.ipynb`) and Python script (`.py`) contain the same code. Both are provided for convenience.  
-- To run the Python script, install the dependencies listed in `requirements.txt`.  
+- To run the Python script, install the dependencies listed in `requirements.txt`.
+- To run the notebook, you may need to install `ipykernel` and `jupyter`. 
 ---
 
 ## Features
