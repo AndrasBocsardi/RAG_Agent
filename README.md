@@ -1,7 +1,7 @@
 # RAG Agent with ReAct Pattern
 
 ## Overview
-This project is a prototype **Agentic Retrieval-Augmented Generation (RAG) chatbot** built with the **ReAct pattern** using 
+This project is a prototype **(RAG) chatbot** built with the **ReAct pattern** using 
 The agent demonstrates **autonomous reasoning, tool usage, retrieval integration, and memory** in a conversational setting.  
 
 It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves relevant sections via a vector database, and generates grounded answers. A math tool is also included to showcase multi-tool usage.
@@ -43,5 +43,31 @@ It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves releva
    - Dialogue history is stored in a variable.
    - Provides continuity across multiple turns within a single session.
 
+---
 
+## Design choices
+- **ReAct pattern** 
+    - ReAct pattern was chosen to demonstrate agentic behavior, where the model
+    can reason about tasks, decide on tool usage, and chain tool calls.
+- **Google Gemini API** 
+    - Initially tested local HuggingFace models, but due to hardware limitations, they were impractical to run.
+    Switched to the free Google Gemini API for both the LLM (gemini-2.5-flash) and embeddings (gemini-embedding-001).
 
+---
+
+## Limitations & Future Work
+
+- **Hardware constraints**  
+  Could not use large local models; limited to free-tier cloud APIs.  
+
+- **Conversation memory**  
+  Only session-based; no persistence to disk or database. Could be extended with a vector memory or Redis/SQLite backend.  
+
+- **Knowledge source**  
+  Currently only supports a single PDF. Future work could enable multi-document ingestion or external APIs.  
+
+- **Evaluation**  
+  No benchmarking included. Latency, accuracy, and scalability analysis could be added.  
+
+- **Interface**  
+  Runs in CLI; could be extended to a web interface (Streamlit/FastAPI).  
