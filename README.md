@@ -62,7 +62,7 @@ It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves releva
   Could not use large local models; limited to free-tier cloud APIs.  
 
 - **Conversation memory**  
-  Only session-based; no persistence to disk or database. Could be extended with a vector memory or Redis/SQLite backend.  
+  Only session-based; no persistence to disk or database.  
 
 - **Knowledge source**  
   Currently only supports a single PDF. Future work could enable multi-document ingestion or external APIs.  
@@ -71,4 +71,4 @@ It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves releva
   No benchmarking included. Latency, accuracy, and scalability analysis could be added.  
 
 - **Interface**  
-  Runs in CLI; could be extended to a web interface (Streamlit/FastAPI).  
+  Runs in CLI; could be extended to a web interface (ex. Streamlit).  
