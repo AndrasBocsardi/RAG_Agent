@@ -37,7 +37,8 @@ It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves releva
 3. **Reasoning & Acting**
    - User asks a question.
    - Agent decides whether to call retrieval, calculator, or directly answer.
-   -  Can combine multiple tools in sequence. Example: retrieve statistical data from the knowledge base, then perform arithmetic calculations on the retrieved values.  
+   -  Can combine multiple tools in sequence. Example: retrieve statistical data from the knowledge base, then perform arithmetic calculations on the retrieved values.
+  ![image alt](https://github.com/AndrasBocsardi/RAG_Agent/blob/2fb39ccf5a7cc101f278f82b426ac107f2ee2488/RAG%20example.png)
 
 4. **Conversation Memory**
    - Dialogue history is stored in a variable.
