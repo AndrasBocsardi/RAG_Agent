@@ -7,6 +7,9 @@ The agent demonstrates **autonomous reasoning, tool usage, retrieval integration
 It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves relevant sections via a vector database, and generates grounded answers. A math tool is also included to showcase multi-tool usage.
 
 ---
+- The notebook (`.ipynb`) and Python script (`.py`) contain the same code. Both are provided for convenience.  
+- To run the Python script, install the dependencies listed in `requirements.txt`.  
+---
 
 ## Features
 - **Agentic behavior**  
