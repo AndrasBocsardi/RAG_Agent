@@ -1,7 +1,7 @@
 # RAG Agent with ReAct Pattern
 
 ## Overview
-This project is a prototype **(RAG) chatbot** built with the **ReAct pattern** using 
+This project is a prototype **(RAG) chatbot** built with the **ReAct pattern**.
 The agent demonstrates **autonomous reasoning, tool usage, retrieval integration, and memory** in a conversational setting.  
 
 It loads knowledge from a PDF (*NBA 2024–25 Season Summary*), retrieves relevant sections via a vector database, and generates grounded answers. A math tool is also included to showcase multi-tool usage.
